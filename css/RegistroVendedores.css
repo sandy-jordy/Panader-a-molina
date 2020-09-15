@@ -1,0 +1,145 @@
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #3d32ac;
+  font-family: "Segoe UI";
+  font-weight: 300;
+}
+.form-nombres1 {
+  display: flex;
+  flex-direction: row;
+}
+.form-nombres1 div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5%;
+}
+.direcc {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5%;
+}
+.direcc textarea {
+  width: 97%;
+}
+.form-nombres1 div input {
+  width: 300px;
+}
+form {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0.5px 15px rgba(0, 0, 0, 0);
+}
+.r {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #3d32ac;
+  font-weight: 900;
+}
+.r h3:nth-of-type(2):hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+.field {
+  border: 0;
+  outline: none;
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 25px;
+  color: black;
+  height: 42px;
+  background-color: white;
+  box-shadow: -3px 7px 17px #888888;
+  font-size: 16px;
+}
+.formrow {
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+}
+.form-row .form-group {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.form-group-row {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+.field {
+  border: 0;
+  outline: none;
+  margin: 0;
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 25px;
+  height: 15px;
+  background-color: white;
+  box-shadow: -3px 7px 17px #888888;
+  font-size: 16px;
+}
+.form-group-row select {
+  outline: none;
+  margin: 0;
+  height: 18px;
+  border: solid 1px #ccc;
+  border-radius: 29px;
+  background-color: white;
+  box-shadow: -3px 7px 17px #888888;
+}
+.btn {
+  margin-left: 9%;
+  width: 80%;
+  background-color: #3d32ac;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 0px 10px 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateY(4px);
+  background-color: #ffffff;
+  border-color: #3d32ac;
+  color: #3d32ac;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.image-container {
+  background-image: url("../images/fondo.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: contain;
+  display: flex;
+  flex-flow: column nowrap;
+}
