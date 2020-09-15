@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fuente/entypo/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/material-icon.css">
+  <link rel="stylesheet" href="css/bootstrap.3.3.7.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/registrar-pedido.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/bread.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Panaderia Molina</title>
+</head>
+<body>
+      <!--Modal success-->
+      <div id="myModal-venta" class="modal fade">
+            <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                    <div class="modal-header-success">
+                        <div class="icon-box-success">
+                            <i class="material-icons">&#xE876;</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4>Se ha registrado la venta!</h4>	
+                        <p>La venta se ha registrado, es posible ver su estado en la gestion de venta.</p>
+                        <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Aceptar</span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Final modal-->
+  <!--Modal success-->
+  <div id="myModal-success" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header-success">
+                <div class="icon-box-success">
+                    <i class="material-icons">&#xE887;</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¿ Esta seguro que desea salir?</h4>	
+                <button class="btn" id="btn-continuar" data-dismiss="modal"><span>Cancelar</span> </button>
+                <a class="btn" href="login.html" id="btn-continuar" ><span>Aceptar</span> </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Final modal-->
+<header>
+<nav>
+ <div class="item-nav">
+    <a id="btn-menu"><span class="icon-menu" id="span-icon-menu"></span></a>
+ </div>
+  <div class="item-nav">
+      <img   src="img/LogoPanaderia.png" alt="">
+  </div>
+ <div class="item-nav"> 
+   <div> <img class="item-right" src="img/jorge-perfil.png" alt=""> </div>
+   <div><span class="item-right">Jorge Molina</span></div>
+ </div>
+</nav>        
+</header>
+<div class="content-menu" id="content-menu">
+  <div class="menbrete">
+    <div class="imagen">
+             <img src="img/jorge-perfil.png" alt="">
+   </div>
+   <div class="texto">
+          <span>Jorge Molina</span>
+          <span>Administrador</span>
+ </div>
+ </div>
+        <ul>
+              <li><a href="dashboard.html">Inicio</a></li>
+              <li><a href="lista-productos MODIFICACION.html">Gestionar Productos</a></li>
+              <li><a href="MateriaPrima.html">Gestionar Materia Prima</a></li>
+              <li><a href="pedido.html">Gestionar Pedido</a></li>
+              <li><a href="registrar-pedido.html">Registrar Pedido</a></li>
+              <li><a href="Proveedores.html">Ofrecer Materia Prima</a> </li>
+             <li class="cuenta"><a href="Iadmin.html">Crear Cuenta</a></li>
+             <li><a data-toggle="modal" data-target="#myModal-success" href="#myModal-success">Salir</a></li>
+       </ul> 
+</div>
+  <div class="content-main row">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="pedidos">
+                    <ul id="lista-productos">
+                        <li>
+                            <div class="imagen">
+                                <img src="img/Pan de Hot Dog.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Nombre: Pan Hot Dog</span>
+                                 <span>Paquete: 12unds.</span>
+                                 <span>Precio: C$ 20/bolsa.</span>
+                                 <span>Cantidad pendiente: 23 bolsas.</span>
+                            </div>
+                            <div class="simbolo">
+                                <span class="icon-circle-with-plus" ></span>
+                            </div>
+                         </li> 
+                         <li>
+                            <div class="imagen">
+                                    <img src="img/Pico de piña.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span>Nombre: Pico de piña</span>
+                                <span>Paquete: 12unds.</span>
+                                <span>Precio: C$ 20/bolsa.</span>
+                                <span>Cantidad pendiente: 20 bolsas.</span>
+                            </div>
+                            <div class="simbolo">
+                               <span class="icon-circle-with-plus"></span>
+                           </div>         
+                        </li>
+                         <li>
+                              <div class="imagen">
+                                 <img src="img/Punto Rojo.jpg" alt="">
+                             </div>
+                                 <div class="info">
+                                     <span>Nombre: Punto rojo</span>
+                                      <span>Paquete: 12unds.</span>
+                                      <span>Precio: C$ 20/bolsa.</span>
+                                      <span>Cantidad pendiente: 13 bolsas.</span>
+                                 </div>
+                                 <div class="simbolo">
+                                     <span class="icon-circle-with-plus"></span>
+                                 </div>
+                          </li>
+                          <li>
+                                 <div class="imagen">
+                                    <img src="img/Torta de gato.jpg" alt="">
+                                </div>
+                                    <div class="info">
+                                        <span>Nombre: Torta de gato</span>
+                                         <span>Paquete: 12unds.</span>
+                                         <span>Precio: C$ 20/bolsa.</span>
+                                         <span>Cantidad pendiente: 26 bolsas.</span>
+                                    </div>
+                                    <div class="simbolo">
+                                        <span class="icon-circle-with-plus"></span>
+                                    </div>
+                          </li>
+                          <li>
+                                 <div class="imagen">
+                                    <img src="img/Pan de Hamburguesa pequeña.jpg" alt="">
+                                </div>
+                                    <div class="info">
+                                        <span>Nombre: Pan mini hamburguesa</span>
+                                         <span>Paquete: 20unds.</span>
+                                         <span>Precio: C$ 30/bolsa.</span>
+                                         <span>Cantidad pendiente: 30 bolsas.</span>
+                                    </div>
+                                    <div class="simbolo">
+                                        <span class="icon-circle-with-plus"></span>
+                                    </div>
+                          </li>      
+                          <li>
+                            <div class="imagen">
+                               <img src="img/chispitas.jpg" alt="">
+                           </div>
+                               <div class="info">
+                                   <span>Nombre: Chispitas</span>
+                                    <span>Paquete: 20 unds.</span>
+                                    <span>Precio: C$ 25/bolsa.</span>
+                                    <span>Cantidad pendiente: 12 bolsas.</span>
+                               </div>
+                               <div class="simbolo">
+                                   <span class="icon-circle-with-plus"></span>
+                               </div>
+                         </li>   
+                         <li>
+                            <div class="imagen">
+                               <img src="img/EspecialNav.PNG" alt="">
+                           </div>
+                               <div class="info">
+                                   <span>Nombre: Especial Navideño</span>
+                                    <span>Paquete: 1 unds.</span>
+                                    <span>Precio: C$ 50 </span>
+                                    <span>Cantidad pendiente: 2 </span>
+                               </div>
+                               <div class="simbolo">
+                                   <span class="icon-circle-with-plus"></span>
+                               </div>
+                         </li>          
+                  </ul>
+             </div>
+    </div>    
+    <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="informacion row">
+               <div class="col-xs-2 col-sm-4 col-md-2"><label for="nombre-cliente"><span>Nombre: </span></div>
+               <div class="col-xs-7 col-sm-8 col-md-7"><input type="text"  maxlength="40" id="nombre-cliente" name="nombre-cliente" ></div>
+               <div class="col-xs-2 col-sm-4 col-md-3"><span>Codigo: </span><span>P002</span></div>
+               <div class="col-xs-2 col-sm-3 col-md-2"><span>Telefono:</span></div>
+               <div class="col-xs-3 col-sm-4 col-md-4"><input type="text" maxlength="8" name="telefono-cliente" id="telefono-cliente"></div>
+               <div class="col-xs-2 col-sm-4 col-md-2"> <label for="correo-cliente"><span>Correo:</span> </label></div>
+               <div class="col-xs-5 col-sm-8 col-md-4"><input type="email" maxlength="40"  style="width: 100%;height: 100%;" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" name="correo-cliente" id="correo-cliente"></div>
+            </div>
+            <div class="realizar ">
+                    <div class="medio" id="content-lista-carro">
+                       <ul id="lista-carro">
+                           
+                             <li>
+                                     <div class="imagen">
+                                             <img src="img/icon-user-comentario.png" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <span>Comentario</span>
+                                         <span>Usted puede registrar alguna observacion importante del pedido.</span>
+                                     </div>
+                                     <div class="simbolo">
+                                        <span class="icon-chat"></span>
+                                        <span>Fecha: 4-07-2019</span>
+                                    </div>         
+                             </li>
+                          </ul>
+                     </div>
+                    <div class="bajo row">
+                        <div class="col-xs-12 col-sm-7 col-md-8">
+                                <textarea name="comentario" maxlength="80"  id="text-comentario" cols="1" rows="1" placeholder="Agregar un comentario"></textarea>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-md-4">
+                            <a  class="btnAgregar" id="btnAgregar"> Registrar </a>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-2 col-md-8">
+                                <a class="satisfecho" id="btn_enviar"  data-toggle="modal"  onclick="Enviar();">Enviar pedido</a>
+                        </div>
+                    </div>
+                </div> 
+    </div>
+        
+</div> 
+<script src="js/jquery.min.3.3.1.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.3.3.7.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/registrar-pedido.js"></script>
+<script src="js/registrar-pedido-query.js"></script>
+
+</body>
+</html>
+

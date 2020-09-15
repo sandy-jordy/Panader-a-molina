@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registro Vendedores</title>
+    <!-- Custom styles for this template -->
+    <link href="css/RegistroVendedores.css" rel="stylesheet" />
+  </head>
+  <body class="image-container">
+    <form action="">
+      <div class="r">
+        <h3>Formulario de registro de vendedores</h3>
+        <h3>X</h3>
+      </div>
+      <div class="form-nombres1">
+          <div class="form-group">
+            <label for="Pnombre"> Primer Nombre</label>
+            <input
+              type="text"
+              class="field"
+              id="Pnombre"
+              placeholder="David"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="Snombre"> Segundo Nombre</label>
+            <input
+              type="text"
+              class="field"
+              id="Snombre"
+              placeholder="Jason"
+            />
+          </div>
+        </div>
+        <div class="form-nombres1">
+          <div class="form-group">
+            <label for="Papellido"> Primer Apellido</label>
+            <input
+              type="text"
+              class="field"
+              id="Papellido"
+              placeholder="Suarez"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="Snombre"> Segundo Apellido</label>
+            <input
+              type="text"
+              class="field"
+              id="Sapellido"
+              placeholder="Matamorro"
+              required
+            />
+          </div>
+        </div>
+        <div class="direcc">
+          <label for="direccion">Dirección</label>
+          <textarea class=" field" id="direccion" placeholder="Altamira frente a cebasa" row="3"> </textarea>
+        </div>
+        <div class="form-nombres1">
+          <div class="form-group">
+            <label for="cedula">Cédula</label>
+            <input
+              type="text"
+              class=" field"
+              id="cedula"
+              placeholder="607-300792-0024R"
+              required
+            />
+          </div>
+          <div class="form-group">
+              <label for="Uempresa">Dónde Laboro antes?</label>
+              <input
+                type="text"
+                class="field"
+                id="Uempresa"
+                placeholder="Panaderia Xiloa"
+                required
+              />
+            </div>
+        </div>
+       
+      </div>
+      <p>Rango de años en que laboró</p>
+      <div class="formrow">
+          <div class="form-group-row">
+            <label for="R1empresa" class="">Empezo en el año:</label>
+            <select name="anio-inicio" id="anio-inicio" class="field">
+                <option value="">Seleccione..</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+            </select>  
+           
+          </div>
+          <div class="form-group-row">
+            <label for="R2empresa" class="">hasta el año:</label>
+            <select name="anio-fin" id="anio-fin"  class="field">
+                <option value="">Seleccione..</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+              </select>  
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group row">
+              <label for="salario" class="">Salario</label>
+                <input
+                  type="text"
+                  class=" field"
+                  id="salario"
+                  placeholder="Salario"
+                  required
+                />
+             
+            </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input
+            type="text"
+            class="field"
+            id="telefono"
+            placeholder="telefono"
+            required
+          />
+        </div>
+        
+        
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="correo">Correo Electrónico</label>
+              <input
+                type="email"
+                id="correo"
+                class="field"
+                placeholder="Correo Electrónico"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputPassword">Contraseña</label>
+              <input
+                type="password"
+                id="inputPassword"
+                class="field"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+      </div>
+        <button class="btn" type="submit">
+          Guardar
+        </button>
+  
+    </form>
+  </body>
+</html>
